@@ -74,6 +74,16 @@ p {
     margin: 0;
 }
 
+@media screen and (max-width: 767px){
+    p {
+        display: flex;
+        justify-content: start;
+        margin-top: 3.50%;
+
+    }
+}
+
+
 .text-slider {
     overflow: hidden;
 }
@@ -98,6 +108,15 @@ input{
     display: flex;
     justify-content: end;
 }
+
+@media screen and (max-width: 767px){
+    .buttons{
+        justify-content: center;
+        margin-top: 3.50%;
+
+    }
+}
+
 
 .in {
     border: 2px solid transparent; 
@@ -184,5 +203,15 @@ label{
     display: flex;
     justify-content: space-between;
     margin-top: 3.5%;
-    height: 3vh;
+    /* height: 3vh; */
 }
+
+@media screen and (max-width: 767px){
+    .container{ 
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 0;
+        /* height: 3vh; */
+    }
+}
+
