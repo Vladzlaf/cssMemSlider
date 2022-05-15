@@ -128,10 +128,17 @@ input {
     cursor: pointer;
 }
 
+
 label:hover .in {
     border: 2px solid #b6b0e9;
     background-color: #ffffff;
 }
+
+label:active .in {
+    border: 2px solid #b6b0e9;
+    background-color: #999999;
+}
+
 
 #button-0:checked~.memes-slider>.content {
     margin-left: 0;
