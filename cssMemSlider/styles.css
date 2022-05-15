@@ -44,6 +44,7 @@ body {
     box-shadow: 0px 0px 35px 5px rgba(34, 60, 80, 0.35);
     border-radius: 3%;
     padding: 3% 3% 5% 3%;
+    margin: 1%;
     background-color: #7e9abe3b;
 }
 
@@ -52,12 +53,19 @@ body {
 }
 
 .meme {
-    height: 40vh;
+    height: 45vh;
     width: 20%;
     float: left;
     transition: 0.3s;
     border-radius: 3%;
 }
+
+/* @media screen and (max-width: 767px){
+    .meme {
+        height: 35vh;
+    }
+} */
+
 
 .memes-slider{
     overflow: hidden;
@@ -194,8 +202,8 @@ label{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1.3rem;
-    height: 1.3rem;
+    width: 1.5rem;
+    height: 1.5rem;
     cursor: pointer;
 }
 
