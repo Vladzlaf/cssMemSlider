@@ -43,7 +43,7 @@ body {
 .slider{
     box-shadow: 0px 0px 35px 5px rgba(34, 60, 80, 0.35);
     border-radius: 3%;
-    padding: 3%;
+    padding: 3% 3% 5% 3%;
     background-color: #58749ea8;
 }
 
