@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    background: linear-gradient(60deg, #2159a3, #232192, #502c7c);
+    background-size: cover;
+    animation: gradient 10s ease infinite;
+    background-size: 200%;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10%;
+    width: 70vh;
+}
+
+.slider {
+    box-shadow: 0 0 3.5rem 0.5rem rgba(34, 60, 80, 0.35);
+    border-radius: 3%;
+    padding: 3% 3% 5% 3%;
+    margin: 1.3%;
+    background-color: #7e9abe3b;
+}
+
+.img {
+    width: 100%;
+}
+
+.meme {
+    height: 45vh;
+    width: 100%;
+    transition: 0.3s;
+    border-radius: 3%;
+}
+
+.memes-slider {
+    overflow: hidden;
+}
+
+.content {
+    width: 500%;
+    transition: 0.3s;
+    display: flex;
+}
+
+p {
+    display: flex;
+    justify-content: start;
+    margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+    p {
+        display: flex;
+        justify-content: start;
+        margin-top: 1.50%;
+
+    }
+}
+
+.text-slider {
+    overflow: hidden;
+}
+
+.text-content {
+    display: flex;
+    justify-content: flex-start;
+    width: 500%;
+    transition: 0.2s;
+}
+
+.text {
+    width: 100%;
+}
+
+input {
+    display: none;
+}
+
+.buttons {
+    margin-top: 0.50%;
+    display: flex;
+    justify-content: end;
+}
+
+@media screen and (max-width: 767px) {
+    .buttons {
+        justify-content: center;
+        margin-top: 1.50%;
+
+    }
+}
+
+
+.in {
+    border: 0.1rem solid transparent;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: rgb(157, 173, 219);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+label:hover .in {
+    border: 0.1rem solid #b6b0e9;
+    background-color: #ffffff;
+}
+
+label:active .in {
+    border: 0.1rem solid #b6b0e9;
+    background-color: #999999;
+}
+
+#button-0:checked~.container-main>.memes-slider>.content {
+    margin-left: 0;
+}
+
+#button-1:checked~.container-main>.memes-slider>.content {
+    margin-left: -100%;
+
+}
+
+#button-2:checked~.container-main>.memes-slider>.content {
+    margin-left: -200%;
+
+}
+
+#button-3:checked~.container-main>.memes-slider>.content {
+    margin-left: -300%;
+
+}
+
+#button-4:checked~.container-main>.memes-slider>.content {
+    margin-left: -400%;
+
+}
+
+#button-0:checked~.container-main>.container>.text-slider>.text-content {
+    margin-left: 0;
+}
+
+#button-1:checked~.container-main>.container>.text-slider>.text-content {
+    margin-left: -100%;
+
+}
+
+#button-2:checked~.container-main>.container>.text-slider>.text-content {
+    margin-left: -200%;
+
+}
+
+#button-3:checked~.container-main>.container>.text-slider>.text-content {
+    margin-left: -300%;
+
+}
+
+#button-4:checked~.container-main>.container>.text-slider>.text-content {
+    margin-left: -400%;
+
+}
+
+#button-0:checked~.container-main>.container>.buttons>label>.active1,
+#button-1:checked~.container-main>.container>.buttons>label>.active2,
+#button-2:checked~.container-main>.container>.buttons>label>.active3,
+#button-3:checked~.container-main>.container>.buttons>label>.active4,
+#button-4:checked~.container-main>.container>.buttons>label>.active5 {
+    background: transparent;
+    border: 0.1rem solid #b6b0e9;
+}
+
+#button-0:checked~.container-main>.container>.buttons>label:hover .active1,
+#button-1:checked~.container-main>.container>.buttons>label:hover .active2,
+#button-2:checked~.container-main>.container>.buttons>label:hover .active3,
+#button-3:checked~.container-main>.container>.buttons>label:hover .active4,
+#button-4:checked~.container-main>.container>.buttons>label:hover .active5 {
+    border: 0.1rem solid #6c5fe2;
+}
+
+
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.5%;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 0;
+    }
+}
